@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:20:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/04/09 09:26:13 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 09:54:28 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	**ft_split(char *s, char c)
 	array = fill_array(array, s, c);
 	if (!array[0])
 	{
-		ft_free_array(array);
+		ft_free_array((void**)array);
 		return (NULL);
 	}
 	return (array);

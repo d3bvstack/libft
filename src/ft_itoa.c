@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 11:20:56 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/01/24 10:07:19 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 09:53:52 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char	*ft_itoa(int n)
 	char	*result;
 	int		i;
 
+	num = n;
 	i = ft_int_length(num);
 	result = malloc(sizeof(char) * (i + 1));
 	if (!result)
