@@ -6,7 +6,7 @@
 #    By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 13:30:50 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/04/13 15:37:35 by dbarba-v         ###   ########.fr        #
+#    Updated: 2025/04/13 16:31:07 by dbarba-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,15 @@ SRC_FILES = src/ft_atoi.c \
 			src/ft_issing.c \
 			src/ft_isspace.c \
 			src/ft_itoa.c \
+			src/ft_lstadd_back.c \
+			src/ft_lstadd_front.c \
+			src/ft_lstclear.c \
+			src/ft_lstdelone.c \
+			src/ft_lstiter.c \
+			src/ft_lstlast.c \
+			src/ft_lstmap.c \
+			src/ft_lstnew.c \
+			src/ft_lstsize.c \
 			src/ft_memchr.c \
 			src/ft_memcmp.c \
 			src/ft_memmove.c \
