@@ -6,7 +6,7 @@
 #    By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 13:30:50 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/04/13 10:00:04 by dbarba-v         ###   ########.fr        #
+#    Updated: 2025/04/13 15:37:35 by dbarba-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,9 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 OBJDIR = objs
+LIBDIR = lib
 
-# Sources
+# Source files - List of all C files to compile
 SRC_FILES = src/ft_atoi.c \
 			src/ft_atol.c \
 			src/ft_bzero.c \
@@ -64,28 +65,35 @@ SRC_FILES = src/ft_atoi.c \
 
 SRC = $(SRC_FILES)
 
-# Objects
+# Objects - Convert source files (.c) to object files (.o) in the objects directory
 OBJS = $(addprefix $(OBJDIR)/, $(SRC:.c=.o))
 
-# Headers location
+# Headers location - Where to find the header files (.h)
 INCLUDES = ./include/
 
-# Rules
-# target : dependencies
-# all -> Standard make target
-# NAME -> Name of outfile
-all: $(OBJDIR) $(NAME)
+# Rules - How to build the library
+# Format: target: dependencies
+#   commands to build target
+#
+# 'all' - Default target that builds the complete library
+# $(NAME) - The output file (libft.a)
+all: $(OBJDIR) $(LIBDIR) $(LIBDIR)/$(NAME)
 
+# Create the objects directory if it doesn't exist
 $(OBJDIR):
 	mkdir -p $(OBJDIR)/src
+
+# Create the library directory if it doesn't exist
+$(LIBDIR):
+	mkdir -p $(LIBDIR)
 
 # Each .o has as dependency a same name .c 
 $(OBJDIR)/%.o: %.c
 	$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 
 # Target program (libft.a) has as dependencies the OBJS
-$(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+$(LIBDIR)/$(NAME): $(OBJS)
+	$(AR) $@ $(OBJS)
 
 # clean doesn't have dependencies, it just executes command
 clean:
@@ -93,9 +101,10 @@ clean:
 
 # fclean executes first clean as it has it as dependency
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(LIBDIR)/$(NAME)
+	$(RM) -r $(LIBDIR)
 
 # re executes fclean and then re-make all
 re: fclean all
 
-.PHONY: all clean fclean re $(OBJDIR)
+.PHONY: all clean fclean re $(OBJDIR) $(LIBDIR)
