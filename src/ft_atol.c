@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+long	ft_atol(const char *nptr);
+
 /// @brief Converts the initial portion of the string to long representation.
 /// @param nptr The string to convert.
 /// @return The converted value as a long integer.

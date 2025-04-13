@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char	*ft_strjoin_three(char *s1, char *s2, char *s3);
+
 char	*ft_strjoin_three(char *s1, char *s2, char *s3)
 {
 	char	*temp;

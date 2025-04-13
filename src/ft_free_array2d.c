@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	ft_free_array2d(void ***array);
+
 /// @brief Frees a null terminated array, its sub-arrays and the array itself.
 /// @param array Pointer to a null-terminated array of pointers to arrays.
 void	ft_free_array2d(void ***array)

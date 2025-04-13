@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_isalpha(int c);
+
 /// @brief Checks if the given character is an alphabetic character
 /// @param c The character to check (as an int)
 /// @return 1 if the character is alphabetic (a-z or A-Z), 0 otherwise

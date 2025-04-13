@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	*ft_calloc(size_t nmemb, size_t size);
+
 /// @brief Allocates memory for an array of 'nmemb' elements of 'size' bytes
 ///        each and initializes all bytes to zero.
 /// @param nmemb Number of elements.

@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:18:54 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/01/22 12:12:15 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 15:21:56 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+
+/* Function declarations */
+static int	is_in_set(unsigned char c, char const *set);
+char		*ft_strtrim(char const *s1, char const *set);
 
 static int	is_in_set(unsigned char c, char const *set)
 {

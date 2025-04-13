@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	ft_putendl_fd(char *s, int fd);
+
 /// @brief Write a string + a newline to the specified file descriptor
 /// @param s String to be written to fd
 /// @param fd File descriptor pointing to file to be written

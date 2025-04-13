@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 15:18:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/01/27 09:24:15 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:47:12 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+
+/* Function declarations */
+int	ft_atoi(const char *nptr);
 
 /// @brief Converts the initial portion of the string to int representation.
 /// @param nptr The string to convert.

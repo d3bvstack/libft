@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_isdigit(int c);
+
 /// @brief Checks if a character is a decimal digit
 /// @param c The character to check (represented as an int)
 /// @return 1 if the character is a digit (0-9), 0 otherwise

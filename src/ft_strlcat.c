@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+size_t	ft_strlcat(char *dst, const char *src, size_t dst_memsize);
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dst_memsize)
 {
 	size_t	src_len;

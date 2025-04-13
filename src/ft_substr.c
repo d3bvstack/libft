@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char	*ft_substr(char const *source, unsigned int start, size_t len);
+
 /// @brief Allocates and returns a substring from the string 'source'.
 /// @param source The string from which to create the substring.
 /// @param start The start index of the substring in 'source'.

@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_strcmp(const char *s1, const char *s2);
+
 /// @brief Compares two given strings up to n characters.
 /// @param s1 First string passed.
 /// @param s2 Second string passed.

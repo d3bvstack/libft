@@ -6,11 +6,14 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:25:20 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/04/12 18:28:51 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 15:21:48 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+
+/* Function declarations */
+void	ft_free(char **old_mem, char *new_mem);
 
 /// @brief Frees memory pointed to by old_mem and replaces it with new_mem
 /// @param old_mem Pointer to a pointer to be freed and reassigned

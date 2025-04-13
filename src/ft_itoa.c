@@ -6,11 +6,15 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 11:20:56 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/04/13 09:53:52 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 15:20:52 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+
+/* Function declarations */
+static int	ft_int_length(int n);
+char		*ft_itoa(int n);
 
 static int	ft_int_length(int n)
 {

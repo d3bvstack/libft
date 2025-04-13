@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+size_t	ft_strlen(const char *s);
+
 /// @brief Count the length of a string.
 /// @param s String passed to be parsed.
 /// @return Length of the passed string

@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char	*ft_strrchr(const char *str, int c);
+
 char	*ft_strrchr(const char *str, int c)
 {
 	const char	*found;

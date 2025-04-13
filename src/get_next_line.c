@@ -6,11 +6,18 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:55:35 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/04/13 10:12:24 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 15:20:32 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+
+/* Function declarations */
+static char	*extract_line(char *newline, char **storage);
+static int	fill_storage(int fd, char **storage);
+static char	*handle_remaining(char **storage);
+static char	*process_storage(int fd, char **storage);
+char		*get_next_line(int fd);
 
 /// @brief Extracts a line from storage up to and including newline character
 /// @param newline Pointer to the newline character in storage
@@ -20,7 +27,7 @@ static char	*extract_line(char *newline, char **storage)
 {
 	char	*line;
 	char	*new_storage;
-	
+
 	line = ft_substr(*storage, 0, (newline - *storage) + 1);
 	if (!line)
 	{
@@ -28,7 +35,7 @@ static char	*extract_line(char *newline, char **storage)
 		return (NULL);
 	}
 	if (*(newline + 1) == '\0')
-	new_storage = NULL;
+		new_storage = NULL;
 	else
 	{
 		new_storage = ft_strdup(newline + 1);
@@ -52,7 +59,7 @@ static int	fill_storage(int fd, char **storage)
 	char	*new_storage;
 	size_t	strg_len;
 	long	read_bytes;
-	
+
 	strg_len = ft_strlen(*storage);
 	new_storage = ft_calloc(sizeof(char), strg_len + BUFFER_SIZE + 1);
 	if (!new_storage)
@@ -61,7 +68,7 @@ static int	fill_storage(int fd, char **storage)
 		return (-1);
 	}
 	if (*storage)
-	ft_strlcpy(new_storage, *storage, strg_len + 1);
+		ft_strlcpy(new_storage, *storage, strg_len + 1);
 	read_bytes = read(fd, new_storage + strg_len, BUFFER_SIZE);
 	if (read_bytes < 0)
 	{
@@ -78,7 +85,7 @@ static int	fill_storage(int fd, char **storage)
 static char	*handle_remaining(char **storage)
 {
 	char	*line;
-	
+
 	if (*storage && **storage)
 	{
 		line = ft_strdup(*storage);
@@ -97,15 +104,15 @@ static char	*process_storage(int fd, char **storage)
 {
 	char	*newline_ch;
 	long	read_bytes;
-	
+
 	while (1)
 	{
 		newline_ch = ft_strchr(*storage, '\n');
 		if (newline_ch)
-		return (extract_line(newline_ch, storage));
+			return (extract_line(newline_ch, storage));
 		read_bytes = fill_storage(fd, storage);
 		if (read_bytes <= 0)
-		return (handle_remaining(storage));
+			return (handle_remaining(storage));
 	}
 }
 
@@ -115,8 +122,8 @@ static char	*process_storage(int fd, char **storage)
 char	*get_next_line(int fd)
 {
 	static char	*storage[MAX_FD];
-	
+
 	if (fd < 0 || fd >= MAX_FD || BUFFER_SIZE <= 0)
-	return (NULL);
+		return (NULL);
 	return (process_storage(fd, &storage[fd]));
 }

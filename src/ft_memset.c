@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	*ft_memset(void *dest, int c, size_t n);
+
 void	*ft_memset(void *dest, int c, size_t n)
 {
 	unsigned char	*target;

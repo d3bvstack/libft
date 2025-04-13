@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
+
 /// @brief Compares memory areas byte by byte
 /// @param s1 Pointer to first memory area
 /// @param s2 Pointer to second memory area

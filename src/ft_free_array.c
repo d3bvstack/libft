@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	ft_free_array(void **array);
+
 /// @brief Frees each element of a null terminated array and the array itself.
 /// @param array Pointer to the null-terminated array.
 void	ft_free_array(void **array)

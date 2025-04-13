@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char	*ft_strjoin(char const *s1, char const *s2);
+
 /// @brief Creates a new string with allocated memory that joins 2 strings.
 /// @param s1 First string
 /// @param s2 Second string

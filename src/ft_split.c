@@ -6,12 +6,14 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:20:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/04/13 09:54:28 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/04/13 15:20:58 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char			**ft_split(char *s, char c);
 static size_t	word_count(char *s, char c);
 static char		**fill_array(char **o_array, char *s, char c);
 static size_t	word_len(char *s, char c);
@@ -37,7 +39,7 @@ char	**ft_split(char *s, char c)
 	array = fill_array(array, s, c);
 	if (!array[0])
 	{
-		ft_free_array((void**)array);
+		ft_free_array((void **)array);
 		return (NULL);
 	}
 	return (array);

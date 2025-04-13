@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char	*ft_strchr(const char *s, int c);
+
 /// @brief Searches the first instance of a character inside a string
 /// @param s String in which to search for.
 /// @param c Character to search for.

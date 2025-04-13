@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_toupper(int c);
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_isspace(int c);
+
 int	ft_isspace(int c)
 {
 	if (c == 32 || (c >= 9 && c <= 13))

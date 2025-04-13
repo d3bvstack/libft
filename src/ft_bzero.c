@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	ft_bzero(void *s, size_t n);
+
 /// @brief Sets n bytes of memory to zero starting from *s.
 /// @param s Pointer to the starting point from which to set the memory.
 /// @param n Number of bytes to set to 0.

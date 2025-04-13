@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_isascii(int c);
+
 /// @brief Checks if a character is a valid ASCII character
 /// @param c The character to check (represented as an int)
 /// @return 1 if the character is ASCII (between 0 and 127), 0 otherwise

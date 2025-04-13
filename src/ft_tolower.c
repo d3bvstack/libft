@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_tolower(int c);
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

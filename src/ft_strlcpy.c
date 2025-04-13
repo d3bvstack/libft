@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+
 /// @brief Copy a src string up to size to a dst, the dst needs enough space.
 /// @param dst Destination at which the src will be copied.
 /// @param src Source string to copy.

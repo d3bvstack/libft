@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	*ft_memmove(void *dest, const void *src, size_t n);
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*source;

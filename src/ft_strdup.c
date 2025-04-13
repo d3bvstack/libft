@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+char	*ft_strdup(const char *s);
+
 /// @brief Duplicates a string with allocated memory.
 /// @param s String to be duplicated.
 /// @return On success: Pointer to the first char of the new string.

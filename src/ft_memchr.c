@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+void	*ft_memchr(const void *s, int c, size_t n);
+
 /// @brief Locate first occurrence of byte c in memory area s within n bytes
 /// @param s Memory area to search
 /// @param c Byte to find (converted to unsigned char)

@@ -12,6 +12,9 @@
 
 #include "../include/libft.h"
 
+/* Function declarations */
+int	ft_issign(int c);
+
 int	ft_issign(int c)
 {
 	if (c == '+' || c == '-')
