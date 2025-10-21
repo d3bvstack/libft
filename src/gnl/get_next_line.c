@@ -6,16 +6,22 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:55:35 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 21:10:35 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:12:07 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-/// @brief Extracts a line from storage up to and including newline character
-/// @param newline Pointer to the newline character in storage
-/// @param storage Pointer to the buffer containing read data
-/// @return Line including newline character, or NULL on allocation failure
+/**
+ * @brief Extract a line from storage up to and including the newline character.
+ *
+ * Copies characters from the start of storage up to and including the first
+ * newline character. Updates storage to remove the extracted line.
+ *
+ * @param newline Pointer to the newline character in storage.
+ * @param storage Pointer to the buffer containing read data.
+ * @return Pointer to the extracted line, or NULL on allocation failure.
+ */
 static char	*extract_line(char *newline, char **storage)
 {
 	char	*line;
@@ -43,10 +49,16 @@ static char	*extract_line(char *newline, char **storage)
 	return (line);
 }
 
-/// @brief Reads from file descriptor into a new buffer and updates storage
-/// @param fd File descriptor to read from
-/// @param storage Pointer to the string containing previously read characters
-/// @return Number of bytes read or -1 on error
+/**
+ * @brief Read from a file descriptor and append data to storage.
+ *
+ * Allocates a new buffer, copies existing storage, and reads up to BUFFER_SIZE
+ * bytes from the file descriptor. Updates storage with the new data.
+ *
+ * @param fd File descriptor to read from.
+ * @param storage Pointer to the string containing previously read characters.
+ * @return Number of bytes read, or -1 on allocation or read error.
+ */
 static int	fill_storage(int fd, char **storage)
 {
 	char	*new_storage;
@@ -72,9 +84,15 @@ static int	fill_storage(int fd, char **storage)
 	return (read_bytes);
 }
 
-/// @brief Handles end of file or read error conditions
-/// @param storage Pointer to buffer containing any remaining characters
-/// @return The remaining content as a new string, or NULL if empty/error
+/**
+ * @brief Handle end-of-file or read error by returning remaining storage.
+ *
+ * If storage contains data, duplicates and returns it. Frees storage in all
+ * cases.
+ *
+ * @param storage Pointer to buffer containing any remaining characters.
+ * @return Pointer to the remaining content, or NULL if empty or on error.
+ */
 static char	*handle_remaining(char **storage)
 {
 	char	*line;
@@ -89,10 +107,16 @@ static char	*handle_remaining(char **storage)
 	return (NULL);
 }
 
-/// @brief Processes stored data to extract the next line
-/// @param fd File descriptor to read from if newline not found in storage
-/// @param storage Pointer to buffer containing previously read data
-/// @return Next line if found, NULL if EOF reached or on error
+/**
+ * @brief Process storage to extract the next line or read more data if needed.
+ *
+ * Searches for a newline in storage. If not found, reads more data and repeats.
+ * Returns the next line or NULL if end-of-file or error occurs.
+ *
+ * @param fd File descriptor to read from if newline not found in storage.
+ * @param storage Pointer to buffer containing previously read data.
+ * @return Pointer to the next line, or NULL if EOF reached or on error.
+ */
 static char	*process_storage(int fd, char **storage)
 {
 	char	*newline_ch;
@@ -109,9 +133,15 @@ static char	*process_storage(int fd, char **storage)
 	}
 }
 
-/// @brief Reads and returns the next line from a file descriptor
-/// @param fd File descriptor to read from
-/// @return Next line including newline character, or NULL on error/EOF
+/**
+ * @brief Read and return the next line from a file descriptor.
+ *
+ * Returns a line of text from the file descriptor, including the newline
+ * character if present. Returns NULL on error or when end-of-file is reached.
+ *
+ * @param fd File descriptor to read from.
+ * @return Pointer to the next line, or NULL on error or end-of-file.
+ */
 char	*get_next_line(int fd)
 {
 	static char	*storage[MAX_FD];

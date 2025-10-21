@@ -6,16 +6,20 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:15:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:12:09 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:08:58 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Count the length of a string.
- * @param s String passed to be parsed.
- * @return Length of the passed string.
+ * @brief Calculate the length of a string.
+ *
+ * Counts the number of characters in the string s, excluding the null
+ * terminator.
+ *
+ * @param s The string to measure.
+ * @return Length of the string.
  */
 size_t	ft_strlen(const char *s)
 {

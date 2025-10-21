@@ -6,15 +6,18 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:20:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:02:18 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:09:18 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Completely free array.
- * @param array The array to be freed.
+ * @brief Free a string array and return NULL.
+ *
+ * Frees all strings in the array up to index j, then frees the array itself.
+ *
+ * @param array The array to free.
  * @param j Last valid index to free.
  * @return NULL pointer.
  */
@@ -31,27 +34,34 @@ static char	**free_array(char **array, int j)
 }
 
 /**
- * @brief Calculate length of the word.
- * @param s Pointer to character in a string.
- * @param c Character that marks word end.
+ * @brief Calculate the length of a word in a string.
+ *
+ * Returns the number of characters in the word starting at s, ending at
+ * character c or null terminator.
+ *
+ * @param s Pointer to the start of the word.
+ * @param c Delimiter character.
  * @return Number of characters in the word.
- */ 
+ */
 static size_t	word_len(char *s, char c)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (s[i] && s[i] != c)
 	i++;
-	return (i);	
-}	
+	return (i);
+}
 
 /**
- * @brief Function that fills the array with split words.
- * @param o_array The already allocated array of specified size.
- * @param s String to split and write into the array.
- * @param c Delimiter character that separates words.
- * @return On success: Array filled with words; On failure: NULL.
+ * @brief Fill an array with words split from a string.
+ *
+ * Splits s by delimiter c and fills o_array with the resulting words.
+ *
+ * @param o_array Pre-allocated array to fill.
+ * @param s String to split.
+ * @param c Delimiter character.
+ * @return Array filled with words, or NULL on failure.
  */
 static char	**fill_array(char **o_array, char *s, char c)
 {
@@ -83,11 +93,14 @@ static char	**fill_array(char **o_array, char *s, char c)
 }
 
 /**
- * @brief Count the number of words separated by the given delimiter.
- * @param s String to be parsed.
- * @param c Character used as delimiter.
- * @return Number of words.
- */ 
+ * @brief Count the number of words in a string separated by a delimiter.
+ *
+ * Counts the number of words in s separated by character c.
+ *
+ * @param s String to parse.
+ * @param c Delimiter character.
+ * @return Number of words found.
+ */
 static size_t	word_count(char *s, char c)
 {
 	size_t	i;
@@ -103,38 +116,42 @@ static size_t	word_count(char *s, char c)
 		{
 			in_word = true;
 			count++;
-		}	
+		}
 		else if (s[i] == c)
 		{
 			in_word = false;
-		}	
+		}
 		i++;
-	}	
+	}
 	return (count);
-}	
+}
 
-char	**ft_split(char *s, char c)
 /**
- * @brief Creates an array of strings from a given string.
- * @param s String to be split.
+ * @brief Split a string into an array of words.
+ *
+ * Allocates and returns an array of strings obtained by splitting s using
+ * delimiter c.
+ *
+ * @param s String to split.
  * @param c Delimiter character.
- * @return If successful: Array of new strings; If unsuccessful: NULL.
- */ 
+ * @return Array of strings, or NULL on failure.
+ */
+char	**ft_split(char *s, char c)
 {
 	size_t	words;
 	char	**array;
-	
+
 	if (s == NULL)
 	return (NULL);
 	words = word_count(s, c);
 	array = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!array)
 		return (NULL);
-	array = fill_array(array, s, c);	
+	array = fill_array(array, s, c);
 	if (array == NULL || array[0] == NULL)
 	{
 		free_array(array, words - 1);
 		return (NULL);
-	}	
+	}
 	return (array);
-}	
+}

@@ -6,19 +6,21 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 14:57:56 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:04:46 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:08:44 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Compares two given strings.
- * @param s1 First string passed.
- * @param s2 Second string passed.
- * @return 0 if the compared strings are exactly the same.
- *         Non-zero if the compared strings are different.
- *         -1 if either string is NULL.
+ * @brief Compare two strings lexicographically.
+ *
+ * Compares the strings s1 and s2.
+ *
+ * @param s1 First string to compare.
+ * @param s2 Second string to compare.
+ * @return 0 if s1 and s2 are equal, a non-zero value if they differ,
+ *         or -1 if either string is NULL.
  */
 int	ft_strcmp(const char *s1, const char *s2)
 {

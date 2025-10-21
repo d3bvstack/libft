@@ -6,17 +6,21 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 09:31:53 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:20:57 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:09:12 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Allocates and returns a substring from the string 'source'.
- * @param source The string from which to create the substring.
- * @param start The start index of the substring in 'source'.
- * @param len The maximum length of the substring.
+ * @brief Create a substring from a string.
+ *
+ * Allocates and returns a substring from source, starting at index start
+ * and up to len characters.
+ *
+ * @param source The source string.
+ * @param start The start index.
+ * @param len Maximum length of the substring.
  * @return The substring, or NULL if allocation fails.
  */
 char	*ft_substr(char const *source, unsigned int start, size_t len)

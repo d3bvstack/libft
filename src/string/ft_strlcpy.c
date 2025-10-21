@@ -6,18 +6,22 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:49:52 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:11:33 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:08:58 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Copies up to size - 1 characters from the string src to dst, null-terminating the result.
- * @param dst Destination buffer; must have enough space.
- * @param src Source string to copy from.
+ * @brief Copy a string into a buffer with size limit.
+ *
+ * Copies up to size - 1 characters from src to dst, null-terminating the
+ * result.
+ *
+ * @param dst Destination buffer.
+ * @param src Source string.
  * @param size Size of the destination buffer.
- * @return The total length of src. This allows the caller to detect truncation.
+ * @return The total length of src.
  */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

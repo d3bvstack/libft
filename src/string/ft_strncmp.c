@@ -6,19 +6,21 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:51:36 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:22:12 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:09:00 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Compares two given strings up to n characters.
- * @param s1 First string passed.
- * @param s2 Second string passed.
- * @param n Number of characters to compare.
- * @return 0 if the compared strings are exactly the same up to n characters.
- *         Non-zero if the compared strings are different, or -1 if any input is NULL.
+ * @brief Compare two strings up to n characters.
+ *
+ * Compares s1 and s2 up to n characters.
+ *
+ * @param s1 First string to compare.
+ * @param s2 Second string to compare.
+ * @param n Maximum number of characters to compare.
+ * @return 0 if equal, non-zero if different, or -1 if any input is NULL.
  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

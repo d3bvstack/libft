@@ -6,17 +6,19 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 15:23:52 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:06:30 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:08:47 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Duplicates a string with allocated memory.
- * @param s String to be duplicated.
- * @return On success: Pointer to the first char of the new string.
- *         On failure: NULL.
+ * @brief Duplicate a string using dynamic memory allocation.
+ *
+ * Allocates memory and copies the string s into it.
+ *
+ * @param s The string to duplicate.
+ * @return Pointer to the new string, or NULL if allocation fails.
  */
 char	*ft_strdup(const char *s)
 {

@@ -6,21 +6,20 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 15:40:16 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/01 14:49:11 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:08:54 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Handles NULL input cases for ft_strjoin.
+ * @brief Handle NULL input cases for string joining.
  *
- * If both s1 and s2 are NULL, returns NULL.
- * If one is NULL, returns a duplicate of the other.
+ * Returns a duplicate of the non-NULL string, or NULL if both are NULL.
  *
- * @param s1 First input string (may be NULL)
- * @param s2 Second input string (may be NULL)
- * @return Newly allocated string or NULL if both are NULL or allocation fails.
+ * @param s1 First input string, may be NULL.
+ * @param s2 Second input string, may be NULL.
+ * @return Newly allocated string or NULL.
  */
 static char *ft_strjoin_handle_null(const char *s1, const char *s2)
 {
@@ -34,13 +33,13 @@ static char *ft_strjoin_handle_null(const char *s1, const char *s2)
 }
 
 /**
- * @brief Allocates memory for the joined string.
+ * @brief Allocate memory for the joined string.
  *
- * Allocates enough memory to hold both s1 and s2 and the null terminator.
+ * Allocates enough memory for s1, s2, and the null terminator.
  *
- * @param s1 First input string
- * @param s2 Second input string
- * @return Pointer to newly allocated memory, or NULL on failure.
+ * @param s1 First input string.
+ * @param s2 Second input string.
+ * @return Pointer to allocated memory, or NULL on failure.
  */
 static char *ft_strjoin_alloc(const char *s1, const char *s2)
 {
@@ -55,11 +54,13 @@ static char *ft_strjoin_alloc(const char *s1, const char *s2)
 }
 
 /**
- * @brief Copies s1 and s2 into dst, concatenating them.
+ * @brief Copy s1 and s2 into the destination buffer.
  *
- * @param dst Destination buffer (must be large enough)
- * @param s1 First input string
- * @param s2 Second input string
+ * Concatenates s1 and s2 into dst.
+ *
+ * @param dst Destination buffer.
+ * @param s1 First input string.
+ * @param s2 Second input string.
  */
 static void ft_strjoin_copy(char *dst, const char *s1, const char *s2)
 {
@@ -79,13 +80,14 @@ static void ft_strjoin_copy(char *dst, const char *s1, const char *s2)
 }
 
 /**
- * @brief Concatenates two strings into a newly allocated string.
+ * @brief Concatenate two strings into a new string.
  *
- * If either s1 or s2 is NULL, returns a duplicate of the other.
- * If both are NULL, returns NULL.
+ * Allocates and returns a new string containing s1 followed by s2.
+ * If either is NULL, returns a duplicate of the other. If both are NULL,
+ * returns NULL.
  *
- * @param s1 First input string (may be NULL)
- * @param s2 Second input string (may be NULL)
+ * @param s1 First input string, may be NULL.
+ * @param s2 Second input string, may be NULL.
  * @return Newly allocated concatenated string, or NULL on failure.
  */
 char	*ft_strjoin(char const *s1, char const *s2)

@@ -6,18 +6,20 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 14:45:47 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/07/03 19:03:58 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 22:08:43 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Searches the first instance of a character inside a string.
- * @param s String in which to search for.
- * @param c Character to search for.
- * @return Character found: Pointer to the character.
- *         Character not found: NULL.
+ * @brief Find the first occurrence of a character in a string.
+ *
+ * Searches for the first occurrence of the character c in the string s.
+ *
+ * @param s The string to search.
+ * @param c The character to find.
+ * @return Pointer to the first occurrence of c in s, or NULL if not found.
  */
 char	*ft_strchr(const char *s, int c)
 {
