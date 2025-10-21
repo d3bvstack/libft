@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 13:18:14 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/06/27 16:25:33 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/21 21:12:47 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,10 @@
 // Character functions
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
-int					ft_isoperator(char *input, int i);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
-int 				ft_isquote(char *input, int i);
+int 				ft_isquote(int c);
 int					ft_isspace(int c);
 int					ft_issign(int c);
 int					ft_toupper(int c);
@@ -72,7 +71,6 @@ void				*ft_calloc(size_t nmemb, size_t size);
 // Conversion functions
 int					ft_atoi(const char *nptr);
 long				ft_atol(const char *nptr);
-float				ft_atof(const char *nptr);
 char				*ft_itoa(int n);
 
 // File descriptor functions
@@ -82,10 +80,9 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
 // Memory management functions
-void				ft_free(void **old_mem, void *new_mem);
 void				ft_free_array(void **array);
-void				ft_free_array2d(void ***array);
-void				ft_free_all(void *first, ...);
+void				ft_free_array2(void ***array);
+void				ft_free(void **old_mem, void *new_mem);
 
 // File I/O functions
 char				*get_next_line(int fd);
