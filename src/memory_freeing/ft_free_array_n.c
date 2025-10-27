@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 11:17:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/27 11:51:19 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/27 12:06:40 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
  * @param n Number of elements in the array to be freed.
  * @return None.
  */
-void	ft_free_array_n(void **array, int n)
+void	ft_free_array_n(void **array, size_t n)
 {
 	size_t	i;
 
