@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 13:18:14 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 21:12:47 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:53:16 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ void				ft_putnbr_fd(int n, int fd);
 
 // Memory management functions
 void				ft_free_array(void **array);
+void				ft_free_array_n(void **array, int n);
 void				ft_free_array2(void ***array);
 void				ft_free(void **old_mem, void *new_mem);
 
