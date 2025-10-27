@@ -6,7 +6,7 @@
 #    By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 13:30:50 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/10/27 11:54:02 by dbarba-v         ###   ########.fr        #
+#    Updated: 2025/10/27 16:45:26 by dbarba-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ SRC_FILES = \
 	src/memory_freeing/ft_free_array2.c \
 	src/memory_freeing/ft_free_array.c \
 	src/memory_freeing/ft_free_array_n.c \
+	src/memory_freeing/ft_free.c \
 	src/memory/ft_bzero.c \
 	src/memory/ft_calloc.c \
 	src/memory/ft_memchr.c \
