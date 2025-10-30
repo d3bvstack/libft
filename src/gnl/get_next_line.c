@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:55:35 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:12:07 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/10/30 12:18:03 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,8 @@ static int	fill_storage(int fd, char **storage)
 		free(new_storage);
 		new_storage = NULL;
 	}
-	ft_free((void *)storage, new_storage);
+	free(*storage);
+	*storage = new_storage;
 	return (read_bytes);
 }
 
