@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 10:58:51 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:56:49 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:00:55 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,22 @@
  *
  * @param s String to write.
  * @param fd File descriptor to write to.
+ * @return Number of characters written.
  */
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putstr_fd(char *s, int fd)
 {
-	if (s == NULL)
-		return ;
-	write(fd, s, ft_strlen(s));
+	char	*ptr;
+	int		i;
+
+	if (!s)
+		return (ft_putstr_fd("(null)", fd));
+	ptr = s;
+	i = 0;
+	while (*ptr != '\0')
+	{
+		write(fd, ptr, 1);
+		ptr++;
+		i++;
+	}
+	return (i);
 }

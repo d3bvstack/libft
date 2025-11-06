@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 10:52:47 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:56:51 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:03:34 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,16 @@
  *
  * @param s String to write.
  * @param fd File descriptor to write to.
+ * @return Total characters written
  */
-void	ft_putendl_fd(char *s, int fd)
+int	ft_putendl_fd(char *s, int fd)
 {
+	int i;
+
+	i = 0;
 	if (s == NULL)
-		return ;
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+		return (i);
+	i += ft_putstr_fd(s, fd);
+	i += ft_putchar_fd('\n', fd);
+	return (i);
 }

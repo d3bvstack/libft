@@ -6,11 +6,26 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 14:43:20 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:56:51 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 16:58:37 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
+
+static int	ft_count(int n)
+{
+	int	i;
+
+	i = 0;
+	if (n <= 0)
+		i += 1;
+	while (n != 0)
+	{
+		n /= 10;
+		i += 1;
+	}
+	return (i);
+}
 
 /**
  * @brief Write an integer to a given file descriptor.
@@ -20,20 +35,27 @@
  *
  * @param n Integer to write.
  * @param fd File descriptor to write to.
+ * @return Number of digits written.
  */
-void	ft_putnbr_fd(int n, int fd)
+int	ft_putnbr_fd(int n, int fd)
 {
-	long	number;
+	int	i;
 
-	number = n;
-	if (number < 0)
+	i = ft_count(n);
+	if (n == -2147483648)
+		ft_putstr_fd("-2147483648", fd);
+	else
 	{
-		number = -number;
-		ft_putchar_fd('-', fd);
+		if (n < 0)
+		{
+			n = -n;
+			ft_putchar_fd('-', fd);
+		}
+		if (n > 9)
+		{
+			ft_putnbr_fd(n / 10, fd);
+		}
+		ft_putchar_fd(n % 10 + '0', fd);
 	}
-	if (number > 9)
-	{
-		ft_putnbr_fd(number / 10, fd);
-	}
-	ft_putchar_fd((char)(number % 10 + '0'), fd);
+	return (i);
 }

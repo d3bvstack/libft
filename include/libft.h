@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 13:18:14 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/27 12:06:53 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:01:30 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,10 @@ long				ft_atol(const char *nptr);
 char				*ft_itoa(int n);
 
 // File descriptor functions
-void				ft_putchar_fd(char c, int fd);
-void				ft_putstr_fd(char *s, int fd);
-void				ft_putendl_fd(char *s, int fd);
-void				ft_putnbr_fd(int n, int fd);
+int					ft_putchar_fd(char c, int fd);
+int					ft_putstr_fd(char *s, int fd);
+int					ft_putendl_fd(char *s, int fd);
+int					ft_putnbr_fd(int n, int fd);
 
 // Memory management functions
 void				ft_free_array(void **array);
