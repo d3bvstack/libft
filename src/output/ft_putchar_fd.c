@@ -6,20 +6,20 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 10:46:40 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/06 16:56:16 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 18:47:24 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
 /**
- * @brief Write a character to a given file descriptor.
+ * @brief Write a character to a file descriptor.
  *
- * Writes the character c to the file or stream identified by fd.
+ * Writes the character `c` to the file descriptor `fd`.
  *
  * @param c Character to write.
- * @param fd File descriptor to write to.
- * @return 1, number of characters written.
+ * @param fd File descriptor.
+ * @return Number of bytes written (1).
  */
 int	ft_putchar_fd(char c, int fd)
 {

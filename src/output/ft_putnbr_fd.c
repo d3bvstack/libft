@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 14:43:20 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/06 16:58:37 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 18:47:24 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ static int	ft_count(int n)
 }
 
 /**
- * @brief Write an integer to a given file descriptor.
+ * @brief Write an integer to a file descriptor.
  *
- * Writes the integer n as a string of digits to the file or stream identified
- * by fd.
+ * Writes the integer `n` as a decimal string to the file descriptor
+ * `fd`. Handles INT_MIN (-2147483648) explicitly to avoid overflow.
  *
  * @param n Integer to write.
- * @param fd File descriptor to write to.
- * @return Number of digits written.
+ * @param fd File descriptor.
+ * @return Number of characters written.
  */
 int	ft_putnbr_fd(int n, int fd)
 {
