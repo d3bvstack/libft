@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:20:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:09:18 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 10:45:01 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,7 +142,7 @@ char	**ft_split(char *s, char c)
 	char	**array;
 
 	if (s == NULL)
-	return (NULL);
+		return (NULL);
 	words = word_count(s, c);
 	array = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!array)
