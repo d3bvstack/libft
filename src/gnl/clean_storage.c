@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 15:21:12 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:31:24 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:45:13 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
  * @param storage The array of pointers to be freed
  * @return 0 On completed execution
  */
-int clean_storage(char **storage)
+int	clean_storage(char **storage)
 {
-	int i;
+	int	i;
 
 	i = -1;
 	while (++i < MAX_FD)

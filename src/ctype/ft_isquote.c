@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 15:54:45 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 21:05:59 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:45:17 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
  * @param c The character to check.
  * @return The character if it is a quote, 0 otherwise.
  */
-int ft_isquote(int c)
+int	ft_isquote(int c)
 {
-	if(c == '\'' || c == '\"')
+	if (c == '\'' || c == '\"')
 		return (c);
 	return (0);
 }

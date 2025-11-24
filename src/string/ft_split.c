@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:20:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/06 10:45:01 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:43:26 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static size_t	word_len(char *s, char c)
 
 	i = 0;
 	while (s[i] && s[i] != c)
-	i++;
+		i++;
 	return (i);
 }
 
@@ -82,7 +82,7 @@ static char	**fill_array(char **o_array, char *s, char c)
 		if (!o_array[j])
 		{
 			free_array(o_array, j - 1);
-			return NULL;
+			return (NULL);
 		}
 		ft_strlcpy(o_array[j], s + i, len + 1);
 		j++;

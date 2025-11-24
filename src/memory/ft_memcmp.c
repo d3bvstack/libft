@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 12:07:09 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:58:03 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:44:33 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
  */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
+	size_t				i;
 	const unsigned char	*ptr1;
 	const unsigned char	*ptr2;
 

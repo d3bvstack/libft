@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 11:17:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/27 12:06:40 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:44:21 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
  * and finally frees the array pointer itself.
  * After freeing, each element pointer is set to NULL.
  *
- * @param array Pointer to an array of pointers to be freed. If array is NULL, the function does nothing.
+ * @param array Pointer to an array of pointers to be freed. If array is NULL,
+	the function does nothing.
  * @param n Number of elements in the array to be freed.
  * @return None.
  */

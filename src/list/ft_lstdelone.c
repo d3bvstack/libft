@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 10:56:12 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:10:02 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:44:40 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst == NULL || del == NULL)
-        return;
+		return ;
 	del(lst->content);
 	free(lst);
 }

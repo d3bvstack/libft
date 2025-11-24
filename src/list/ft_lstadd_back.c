@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 10:41:51 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:39:27 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:44:46 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list	*last;
 
 	if (!lst || !new)
-        return ;
+		return ;
 	if (*lst == NULL)
 	{
 		*lst = new;

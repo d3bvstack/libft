@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 15:40:16 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:08:54 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:44:01 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param s2 Second input string, may be NULL.
  * @return Newly allocated string or NULL.
  */
-static char *ft_strjoin_handle_null(const char *s1, const char *s2)
+static char	*ft_strjoin_handle_null(const char *s1, const char *s2)
 {
 	if (!s1 && !s2)
 		return (NULL);
@@ -41,7 +41,7 @@ static char *ft_strjoin_handle_null(const char *s1, const char *s2)
  * @param s2 Second input string.
  * @return Pointer to allocated memory, or NULL on failure.
  */
-static char *ft_strjoin_alloc(const char *s1, const char *s2)
+static char	*ft_strjoin_alloc(const char *s1, const char *s2)
 {
 	size_t	len1;
 	size_t	len2;
@@ -62,10 +62,13 @@ static char *ft_strjoin_alloc(const char *s1, const char *s2)
  * @param s1 First input string.
  * @param s2 Second input string.
  */
-static void ft_strjoin_copy(char *dst, const char *s1, const char *s2)
+static void	ft_strjoin_copy(char *dst, const char *s1, const char *s2)
 {
-	size_t i = 0;
-	size_t j = 0;
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	j = 0;
 	while (s1[i])
 	{
 		dst[i] = s1[i];
