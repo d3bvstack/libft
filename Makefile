@@ -6,7 +6,7 @@
 #    By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 13:30:50 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/10/27 16:45:26 by dbarba-v         ###   ########.fr        #
+#    Updated: 2025/11/24 15:30:33 by dbarba-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRC_FILES = \
 	src/ctype/ft_issing.c \
 	src/ctype/ft_isspace.c \
 	src/gnl/get_next_line.c \
+	src/gnl/clean_storage.c \
 	src/list/ft_lstadd_back.c \
 	src/list/ft_lstadd_front.c \
 	src/list/ft_lstclear.c \

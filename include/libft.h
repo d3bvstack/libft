@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 13:18:14 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/06 17:01:30 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:30:03 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
-int 				ft_isquote(int c);
+int					ft_isquote(int c);
 int					ft_isspace(int c);
 int					ft_issign(int c);
 int					ft_toupper(int c);
@@ -87,6 +87,7 @@ void				ft_free(void **old_mem, void *new_mem);
 
 // File I/O functions
 char				*get_next_line(int fd);
+int					clean_storage(char **storage);
 
 // Simple list structure
 typedef struct s_list

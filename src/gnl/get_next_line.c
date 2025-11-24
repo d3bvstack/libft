@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:55:35 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/30 12:18:03 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/24 15:22:11 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -147,6 +147,8 @@ char	*get_next_line(int fd)
 {
 	static char	*storage[MAX_FD];
 
+	if (fd == -1)
+		clean_storage(storage);
 	if (fd < 0 || fd >= MAX_FD || BUFFER_SIZE <= 0)
 		return (NULL);
 	return (process_storage(fd, &storage[fd]));
