@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 12:35:49 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:43:39 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:47:04 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Locate a substring in a string, searching up to a maximum length.

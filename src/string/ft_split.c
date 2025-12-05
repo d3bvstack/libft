@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:20:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:43:26 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:46:22 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Free a string array and return NULL.

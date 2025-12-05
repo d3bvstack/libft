@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 15:18:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:37:15 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:44:20 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Convert a string to an integer.

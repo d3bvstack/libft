@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:18:54 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:09:11 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:47:11 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Check if a character is in a set.

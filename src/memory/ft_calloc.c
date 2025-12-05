@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 10:13:13 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 18:50:11 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:32 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Allocates memory for an array of 'nmemb' elements of 'size' bytes

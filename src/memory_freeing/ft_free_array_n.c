@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 11:17:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:44:21 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:51 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Frees elements of a pointer array of size n, then frees array itself.

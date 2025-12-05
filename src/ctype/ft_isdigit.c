@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
-
 /**
  * @brief Determine if a value is a decimal digit character.
  *

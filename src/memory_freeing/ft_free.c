@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:25:20 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:45:04 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:46:00 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Free memory pointed to by a pointer and assign a new value.

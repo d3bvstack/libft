@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
-
 /**
  * @brief Check if an integer value is a whitespace character.
  *

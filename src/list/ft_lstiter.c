@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 11:13:26 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:39:32 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:08 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Apply a function to the content of each node in a linked list.

@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 12:17:08 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:08:55 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:46:39 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Join three strings into a new dynamically allocated string.

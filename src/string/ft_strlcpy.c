@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:49:52 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:43:53 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:46:53 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Copy a string into a buffer with size limit.

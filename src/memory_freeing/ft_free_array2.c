@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 16:16:00 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:44:24 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:57 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Frees a null-terminated 2D array and all its sub-arrays.

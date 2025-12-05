@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 11:24:59 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:39:35 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:15 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Create a new list by applying a function to each node's content.

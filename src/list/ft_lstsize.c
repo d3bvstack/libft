@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 10:16:56 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:39:36 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:23 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Count the number of nodes in a linked list.

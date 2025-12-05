@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 11:23:11 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:44:36 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:35 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Search for a byte in a memory area.

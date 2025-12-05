@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 15:21:12 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:45:13 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:44:48 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Cleans up strings remaining in storage

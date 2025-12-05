@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
-
 /**
  * @brief Check if a character is a single or double quote.
  *

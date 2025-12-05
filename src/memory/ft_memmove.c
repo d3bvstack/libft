@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 17:04:23 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 20:58:03 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:41 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Copy memory area, handling overlap.

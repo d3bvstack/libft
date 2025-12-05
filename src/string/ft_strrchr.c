@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 15:36:26 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:43:34 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:47:07 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Find the last occurrence of a character in a string.

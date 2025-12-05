@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 10:56:12 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:44:40 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:05 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Delete a single node from a linked list.

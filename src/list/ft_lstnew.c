@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 09:58:10 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:10:05 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:19 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Create a new linked list node.

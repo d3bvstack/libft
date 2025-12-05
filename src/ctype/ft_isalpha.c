@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
-
 /**
  * @brief Determines if a character is alphabetic.
  *

@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 11:17:07 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 18:28:16 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:54 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Frees elements of a null-terminated array, then frees array itself.

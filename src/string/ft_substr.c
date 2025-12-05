@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 09:31:53 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/10/21 22:09:12 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:47:17 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Create a substring from a string.

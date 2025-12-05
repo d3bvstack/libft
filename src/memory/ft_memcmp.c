@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 12:07:09 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:44:33 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:45:38 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Compare two memory areas byte by byte.

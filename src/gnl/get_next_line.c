@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:55:35 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/11/24 15:22:11 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:44:52 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Extract a line from storage up to and including the newline character.
