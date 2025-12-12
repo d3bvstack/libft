@@ -1,3 +1,5 @@
+<img alt="libft cover image" src="https://github.com/user-attachments/assets/093650cd-2927-4d88-a1c6-55c666fdb6bb" />
+
 # libft
 
 ## What is this?
