@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * @brief Extract a line from storage up to and including the newline character.

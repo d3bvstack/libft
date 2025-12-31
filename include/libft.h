@@ -13,6 +13,8 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stddef.h>
+
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -20,13 +22,6 @@
 # ifndef MAX_FD
 #  define MAX_FD 1024
 # endif
-
-# include <limits.h>
-# include <stdarg.h>
-# include <stdbool.h>
-# include <stdint.h>
-# include <stdlib.h>
-# include <unistd.h>
 
 // Character functions
 int					ft_isalpha(int c);

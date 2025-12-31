@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdbool.h>
+#include <stdlib.h>
 
 /**
  * @brief Free a string array and return NULL.

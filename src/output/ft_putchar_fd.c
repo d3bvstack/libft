@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 /**
  * @brief Write a character to a file descriptor.

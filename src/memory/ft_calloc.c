@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 /**
  * @brief Allocates memory for an array of 'nmemb' elements of 'size' bytes
